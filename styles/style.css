@@ -77,40 +77,44 @@ html {
 
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
+@font-face {
+  font-family: "Vulf Mono Light";
+  src: url("/Volumes/Work/!IDEAY4/Coding Website/Github/portfolio-for-creatives/assets/fonts/VulfMonoCode-Light.otf");
+}
+
 :root {
   --body-typeface: "Schibsted Grotesk", sans-serif;
-  --heading-typeface: "Corben", serif;
-  --project-title-typeface: "Corben", serif;
-  --background-color: #fdfdfd;
-  --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;
+  --heading-typeface: "Vulf Mono Light", serif;
+  --project-title-typeface: "Vulf Mono Light", serif;
+  --background-color: #f7f6ee;
+  --background-color-about: #f7f6ee;
+  --background-color-footer: #f7f6ee;
   --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #df3e61;
-  --h2-color: #df3e61;
-  --h3-color: #df3e61;
-  --h4-color: #df3e61;
-  --h5-color: #df3e61;
-  --h6-color: #df3e61;
+  --background-color-holding-page: #f7f6ee;
+  --h1-color: #81bb90;
+  --h2-color: #81bb90;
+  --h3-color: #81bb90;
+  --h4-color: #81bb90;
+  --h5-color: #81bb90;
+  --h6-color: #81bb90;
   --primary-text-color: #222;
-  --holding-page-title-color: #ebedf0;
-  --accent-color: #5200ff;
-  --overlay-color: #00ffaa;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
+  --holding-page-title-color: #f7f6ee;
+  --accent-color: #fde783;
+  --overlay-color: #fde783;
+  --overlay-title-color: #ff98e0;
+  --overlay-description-color: #ff98e0;
+  --hyperlink-color: #81bb90;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --visited-color: #5200ff;
-  --project-title-color: #df3e61;
+  --visited-color: #81bb90;
+  --project-title-color: #81bb90;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: charcoal;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
+  --text-selection-background-color: #fde783;
+  --linear-gradient-color-1: #ff98e0;
+  --linear-gradient-color-2: #fde783;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -301,6 +305,13 @@ a:active {
   font-size: 1.225rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+}
+
+.project-caption {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 /* Hero 
