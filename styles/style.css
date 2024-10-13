@@ -13,6 +13,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
+@font-face {
+  font-family: "Syncro Book";
+  src: url("../assets/fonts/SyncroBook-Web.woff2") format("woff2");
+}
+
 /*
 
 Imported stylesheets. Remove the ones you do not want to use.
@@ -77,44 +82,33 @@ html {
 
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
-@font-face {
-  font-family: "Vulf Mono Light";
-  src: url("/Volumes/Work/!IDEAY4/Coding Website/Github/portfolio-for-creatives/assets/fonts/VulfMonoCode-Light.otf");
-}
-
 :root {
   --body-typeface: "Schibsted Grotesk", sans-serif;
-  --heading-typeface: "Vulf Mono Light", serif;
-  --project-title-typeface: "Vulf Mono Light", serif;
+  --heading-typeface: "Syncro Book", serif;
+  --project-title-typeface: "Syncro Book", serif;
   --background-color: #f7f6ee;
   --background-color-about: #f7f6ee;
   --background-color-footer: #f7f6ee;
-  --alt-background-color: #000000;
+  --alt-background-color: #4B392E;
   --background-color-holding-page: #f7f6ee;
-  --h1-color: #81bb90;
-  --h2-color: #81bb90;
-  --h3-color: #81bb90;
-  --h4-color: #81bb90;
-  --h5-color: #81bb90;
-  --h6-color: #81bb90;
-  --primary-text-color: #222;
+  --h1-color: #4B392E;
+  --h2-color: #4B392E;
+  --h3-color: #4B392E;
+  --h4-color: #4B392E;
+  --h5-color: #4B392E;
+  --h6-color: #4B392E;
+  --primary-text-color: #4B392E;
   --holding-page-title-color: #f7f6ee;
-  --accent-color: #fde783;
-  --overlay-color: #fde783;
-  --overlay-title-color: #ff98e0;
-  --overlay-description-color: #ff98e0;
-  --hyperlink-color: #81bb90;
-  --hyperlink-alternate-color: orangered;
-  --hover-color: #111;
-  --visited-color: #81bb90;
-  --project-title-color: #81bb90;
+  --accent-color: #F7DA9C;
+  --hyperlink-color: #4B392E;
+  --hyperlink-alternate-color: #E3461B;
+  --hover-color: #E3461B;
+  --visited-color: #4B392E;
+  --project-title-color: #4B392E;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: charcoal;
-  --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #fde783;
-  --linear-gradient-color-1: #ff98e0;
-  --linear-gradient-color-2: #fde783;
+  --text-selection-background-color: #F7DA9C;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -162,39 +156,49 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
 
 h3 {
-  font-size: 1.325rem;
+  font-size: 1rem;
+  font-family: var(--body-typeface);
+  font-weight: 550;
   margin-bottom: 1rem;
   line-height: 1.3;
   color: var(--h3-color);
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: var(--body-typeface);
+  font-weight: 400;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-family: var(--body-typeface);
+  font-weight: 600;
   margin-bottom: 1rem;
   color: var(--h5-color);
 }
 
 h6 {
   font-size: 1rem;
+  font-family: var(--body-typeface);
+  font-weight: 400;
   margin-bottom: 1rem;
   color: var(--h6-color);
 }
 
 p {
+  font-family: var(--body-typeface);
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.3;
   margin-bottom: 1rem;
 }
@@ -212,19 +216,14 @@ em {
 }
 
 .project-title {
-  font-size: 3.725rem;
+  font-size: 4rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
 }
 
-.overlay-title {
-  font-size: 2.875rem;
-  color: var(--overlay-title-color);
-}
-
-.overlay-description {
-  color: var(--overlay-description-color);
+.project-role{
+  font-size: 1.5rem;
 }
 
 /* Hyperlink Styles */
@@ -272,46 +271,27 @@ a:active {
   color: var(--hyperlink-alternate-color);
 }
 
-.custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.heart {
-  color: var(--heart-color);
-}
-
-.footer-nav-item {
-  line-height: 1.3;
-}
-
-.award-item {
-  line-height: 1.3;
-}
-
-.social-item {
-  line-height: 1.3;
-}
-
-.list-item {
-  line-height: 1.3;
-  list-style-type: disc;
-  margin-left: 1.2rem;
-}
-
 .project-description {
-  font-size: 1.225rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.project-caption {
   font-size: 1rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+}
+
+.nav-item-active{
   font-weight: 600;
+  color: #E3461B;
+}
+
+.project-name{
+  font-size: 3rem;
+}
+.project-name:hover{
+  color: #E3461B;
+  transition: all 0.4s ease-in-out;
+}
+
+li{
+  list-style-type: none;
 }
 
 /* Hero 
@@ -324,18 +304,30 @@ a:active {
                                  
 */
 
-.hero {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.branding-navigation {
+.menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
-  align-items: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  position: sticky;
+  top:0;
+}
+
+.nav{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2rem;
+  width: 8rem;
+}
+
+.name{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .logo {
@@ -343,33 +335,10 @@ a:active {
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
-.hero-headline-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 4rem;
-  text-align: center;
-}
-
 .hero-icon {
   font-size: 4rem;
 }
 
-.hero-footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.hero-footer-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-}
 
 /* Work Page Layout
 
@@ -385,50 +354,13 @@ a:active {
   flex: 1;
 }
 
-/* Padding around work grid and project page */
-.portfolio,
-.project-wrapper {
-  padding: 0.25rem;
-}
-
-/* Defining the work page grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
-}
-
-.work-page-grid-item {
-  width: 100%;
-  height: auto;
-  position: relative;
-  /* Required to contain overlay size */
-}
-
-/* Overlay */
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.75s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1em;
-  background-color: var(--overlay-color);
-  transition: opacity 0.3s, visibility 0.3s;
-}
-
-.work-page-grid-item:hover .overlay {
-  visibility: visible;
-  opacity: 0.8;
+.work-wrapper,
+.work-menu {
+  
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
 }
 
 /* 
@@ -481,37 +413,17 @@ a:active {
 */
 
 .global-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
   background: var(--background-color-footer);
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
 }
 
-.footer-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.footer-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.footer-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
-
-.awards-list {
-  margin-bottom: 2rem;
-}
 
 /* Project Page 
 
@@ -527,16 +439,18 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 /* Sidebar */
 .project-aside {
   width: 100%;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   color: var(--project-sidebar-text-color);
   background: var(--project-sidebar-background-color);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .project-navigation {
@@ -554,7 +468,7 @@ a:active {
 .project-image-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -564,7 +478,8 @@ a:active {
   /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 2rem;
 }
 
 .large-emoji-placeholder {
@@ -590,50 +505,6 @@ a:active {
  
 }
 
-/* 
-
-██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
-██   ██ ██    ██ ██      ██   ██ ██ ████   ██ ██       
-███████ ██    ██ ██      ██   ██ ██ ██ ██  ██ ██   ███ 
-██   ██ ██    ██ ██      ██   ██ ██ ██  ██ ██ ██    ██ 
-██   ██  ██████  ███████ ██████  ██ ██   ████  ██████  
-                                                       
-*/
-
-.holding-page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  place-items: center;
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
-  /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)), url(/assets/temp/noise.svg);
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
-}
-
-.holding-page-animation {
-  margin-bottom: 1rem;
-}
-
-.holding-page-title {
-  font-size: 1.5rem;
-  color: var(--holding-page-title-color);
-}
-
-.holding-page-footer {
-  display: grid;
-  place-items: center;
-  min-height: 10vh;
-  width: 100%;
-}
-
-.holding-page-copyright {
-  font-size: 0.8rem;
-  color: var(--holding-page-footer-color);
-  margin-bottom: 0;
-}
 
 /*
 ███████ ██████  ██████   ██████  ██████  
@@ -724,16 +595,6 @@ a:active {
     grid-gap: 1rem;
   }
 
-  /* Grayscale filter with full-colour on hover and tap */
-  .work-page-grid-item a.grayscale img {
-    filter: grayscale(100);
-  }
-
-  .work-page-grid-item > a.grayscale:active img,
-  .work-page-grid-item > a.grayscale:hover img {
-    filter: grayscale(0);
-  }
-
   .about {
     padding: 4rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -744,49 +605,6 @@ a:active {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .about-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .footer-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .about-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .footer-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .about-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .footer-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
-
-  .footer-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
 
   /* Padding around work grid and project page */
   .portfolio,
