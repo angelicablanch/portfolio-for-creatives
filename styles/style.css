@@ -10,8 +10,8 @@
 
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
-@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
 
 @font-face {
   font-family: "Syncro Book";
@@ -89,26 +89,26 @@ html {
   --background-color: #f7f6ee;
   --background-color-about: #f7f6ee;
   --background-color-footer: #f7f6ee;
-  --alt-background-color: #4B392E;
+  --alt-background-color: #4b392e;
   --background-color-holding-page: #f7f6ee;
-  --h1-color: #4B392E;
-  --h2-color: #4B392E;
-  --h3-color: #4B392E;
-  --h4-color: #4B392E;
-  --h5-color: #4B392E;
-  --h6-color: #4B392E;
-  --primary-text-color: #4B392E;
+  --h1-color: #4b392e;
+  --h2-color: #4b392e;
+  --h3-color: #4b392e;
+  --h4-color: #4b392e;
+  --h5-color: #4b392e;
+  --h6-color: #4b392e;
+  --primary-text-color: #4b392e;
   --holding-page-title-color: #f7f6ee;
-  --accent-color: #F7DA9C;
-  --hyperlink-color: #4B392E;
-  --hyperlink-alternate-color: #E3461B;
-  --hover-color: #E3461B;
-  --visited-color: #4B392E;
-  --project-title-color: #4B392E;
+  --accent-color: #f7da9c;
+  --hyperlink-color: #4b392e;
+  --hyperlink-alternate-color: #e3461b;
+  --hover-color: #e3461b;
+  --visited-color: #4b392e;
+  --project-title-color: #4b392e;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: charcoal;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #F7DA9C;
+  --text-selection-background-color: #f7da9c;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -222,7 +222,7 @@ em {
   margin-bottom: 1rem;
 }
 
-.project-role{
+.project-role {
   font-size: 1.5rem;
 }
 
@@ -277,20 +277,20 @@ a:active {
   margin-bottom: 1rem;
 }
 
-.nav-item-active{
+.nav-item-active {
   font-weight: 600;
-  color: #E3461B;
+  color: #e3461b;
 }
 
-.project-name{
+.project-name {
   font-size: 3rem;
 }
-.project-name:hover{
-  color: #E3461B;
+.project-name:hover {
+  color: #e3461b;
   transition: all 0.4s ease-in-out;
 }
 
-li{
+li {
   list-style-type: none;
 }
 
@@ -314,18 +314,20 @@ li{
   padding-bottom: 1rem;
   padding-right: 2rem;
   position: sticky;
-  top:0;
+  top: 0;
+  height: 10rem;
+  background: hotpink;
 }
 
-.nav{
-  display:flex;
+.nav {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-right: 2rem;
   width: 8rem;
 }
 
-.name{
+.name {
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -338,7 +340,6 @@ li{
 .hero-icon {
   font-size: 4rem;
 }
-
 
 /* Work Page Layout
 
@@ -356,7 +357,6 @@ li{
 
 .work-wrapper,
 .work-menu {
-  
   padding-top: 1rem;
   padding-left: 1rem;
   padding-bottom: 1rem;
@@ -424,7 +424,6 @@ li{
   padding-right: 2rem;
 }
 
-
 /* Project Page 
 
 ██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
@@ -439,7 +438,6 @@ li{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 /* Sidebar */
@@ -502,9 +500,7 @@ li{
 .project-details {
   width: 100%;
   padding: 1rem;
- 
 }
-
 
 /*
 ███████ ██████  ██████   ██████  ██████  
@@ -605,7 +601,6 @@ li{
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
@@ -623,7 +618,7 @@ li{
     height: 65vh;
     position: -webkit-sticky;
     position: sticky;
-    top: 5vh;
+    top: 10.5rem;
     padding-right: 2rem;
   }
 
