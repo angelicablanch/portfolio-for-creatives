@@ -315,8 +315,8 @@ li {
   padding-right: 2rem;
   position: sticky;
   top: 0;
-  height: 10rem;
-  background: hotpink;
+  height: 7rem;
+  background: var(--background-color);
 }
 
 .nav {
@@ -358,7 +358,7 @@ li {
 .work-wrapper,
 .work-menu {
   padding-top: 1rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-bottom: 1rem;
   padding-right: 2rem;
 }
@@ -472,7 +472,6 @@ li {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
   /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
