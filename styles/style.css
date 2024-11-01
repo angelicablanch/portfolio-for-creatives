@@ -86,11 +86,11 @@ html {
   --body-typeface: "Schibsted Grotesk", sans-serif;
   --heading-typeface: "Syncro Book", serif;
   --project-title-typeface: "Syncro Book", serif;
-  --background-color: #f7f6ee;
-  --background-color-about: #f7f6ee;
-  --background-color-footer: #f7f6ee;
+  --background-color: #FFFDF9;
+  --background-color-about: #FFFDF9;
+  --background-color-footer: #FFFDF9;
   --alt-background-color: #4b392e;
-  --background-color-holding-page: #f7f6ee;
+  --background-color-holding-page: #FFFDF9;
   --h1-color: #4b392e;
   --h2-color: #4b392e;
   --h3-color: #4b392e;
@@ -98,7 +98,7 @@ html {
   --h5-color: #4b392e;
   --h6-color: #4b392e;
   --primary-text-color: #4b392e;
-  --holding-page-title-color: #f7f6ee;
+  --holding-page-title-color: #FFFDF9;
   --accent-color: #f7da9c;
   --hyperlink-color: #4b392e;
   --hyperlink-alternate-color: #e3461b;
@@ -107,7 +107,7 @@ html {
   --project-title-color: #4b392e;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: charcoal;
-  --holding-page-footer-color: #f8f8ff;
+  --holding-page-footer-color: #FFFDF9;
   --text-selection-background-color: #f7da9c;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
@@ -352,6 +352,9 @@ li {
 */
 
 .work-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   flex: 1;
 }
 
@@ -374,33 +377,18 @@ li {
 */
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background: var(--background-color-about);
   padding: 1rem;
   flex: 1;
 }
 
-.about-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+.about-item-1{
+  padding-bottom: 2rem;
 }
 
-.about-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.about-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
-}
 
 /* Global Footer
 
