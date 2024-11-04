@@ -377,18 +377,18 @@ li {
 */
 
 .about {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
   background: var(--background-color-about);
-  padding: 1rem;
-  flex: 1;
 }
 
 .about-item-1{
-  padding-bottom: 2rem;
+  grid-column: 3;
 }
 
+.about-item-2{
+  grid-row: 1;
+  grid-column: 1;
+}
 
 /* Global Footer
 
@@ -533,19 +533,49 @@ li {
 
 */
 
-/* Medium devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
+@media only screen and (max-width: 768px){
   /* TODO: Add styles here for medium devices. */
+  .work-wrapper{
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 3rem;
+    /* TODO: Adjust the width of the logo on large devices here. */
+  }
+  .project-image {
+    padding-bottom: .5rem;
+  }
+  .project-title{
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px){
+  .work-wrapper{
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .logo {
+    width: 5rem;
+    /* TODO: Adjust the width of the logo on large devices here. */
+  }
+  .project-image {
+    padding-bottom: 1rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
-
-  .holding-page-title {
-    font-size: 2rem;
+  .work-wrapper{
+    flex-direction: column;
   }
 
   h1 {
@@ -598,6 +628,9 @@ li {
   .project-wrapper {
     flex-direction: row;
   }
+  .project-title{
+    font-size: 3rem;
+  }
 
   /* Sidebar on Large Devices */
   .project-aside {
@@ -615,8 +648,7 @@ li {
   }
 
   .project-image {
-    min-height: 70vh;
-    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
+    padding-bottom: 1rem;
   }
 
   .project-image-container {
@@ -636,6 +668,12 @@ li {
 
 @media (min-width: 1200px) {
   /* TODO: Add styles here for X-large devices. */
+  .work-wrapper{
+    flex-direction: row;
+  }
+  .project-title{
+    font-size: 4rem;
+  }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -646,6 +684,9 @@ li {
 
 @media (min-width: 1400px) {
   /* TODO: Add styles here for XX-large devices. */
+  .work-wrapper{
+    flex-direction: row;
+  }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
