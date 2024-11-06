@@ -156,7 +156,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -310,9 +310,9 @@ li {
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
   position: sticky;
   top: 0;
   height: 7rem;
@@ -323,7 +323,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-right: 2rem;
+  padding-right: 1rem;
   width: 8rem;
 }
 
@@ -361,9 +361,16 @@ li {
 .work-wrapper,
 .work-menu {
   padding-top: 1rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
   padding-right: 2rem;
+}
+
+.work-preview{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
 }
 
 /* 
@@ -379,6 +386,10 @@ li {
 .about {
   display: grid;
   background: var(--background-color-about);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .about-item-1{
@@ -403,14 +414,16 @@ li {
 .global-footer {
   display: flex;
   flex-direction: row;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: wrap;
+  justify-content:space-between;
   background: var(--background-color-footer);
   padding-top: 1rem;
-  padding-left: 2rem;
+  padding-left:2rem;
   padding-bottom: 1rem;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
+
+
 
 /* Project Page 
 
@@ -435,7 +448,7 @@ li {
   flex-direction: column;
   color: var(--project-sidebar-text-color);
   background: var(--project-sidebar-background-color);
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-right: 2rem;
 }
 
@@ -460,16 +473,11 @@ li {
 
 .project-image {
   width: 100%;
-  /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
   justify-content: right;
-  padding-right: 2rem;
-}
-
-.large-emoji-placeholder {
-  font-size: 12rem;
-  /* TODO: Delete this rule. It is only used for making the placeholder emojis large for demo purposes only. */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-section {
@@ -539,11 +547,22 @@ li {
   .work-wrapper{
     flex-direction: column;
   }
-  h2 {
-    font-size: 1rem;
+
+  .project-name{
+    font-size: 2rem;
   }
+
+  .menu-text
+  .footer-text{
+    font-size: .85rem;
+  }
+
+  .website-name {
+    display:none;
+  }
+
   .logo {
-    width: 3rem;
+    width: 4rem;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
   .project-image {
@@ -552,22 +571,44 @@ li {
   .project-title{
     font-size: 3rem;
   }
+  .about {
+    display:flex;
+    flex-flow: wrap;
+  }
+
+  .about-image{
+    padding-bottom: 3rem;
+  }
+
+  .about-name{
+    font-size: 1.5rem;
+  }
+
 }
 
 @media (min-width: 768px){
   .work-wrapper{
     flex-direction: column;
   }
-  h2 {
-    font-size: 2rem;
+  .website-name {
+    font-size: 1.5rem;
+    text-align: center;
   }
   .logo {
     width: 5rem;
-    /* TODO: Adjust the width of the logo on large devices here. */
   }
   .project-image {
     padding-bottom: 1rem;
   }
+  .about {
+    grid-template-columns: 1fr .5fr 1fr;
+  }
+
+
+  .about-name{
+    font-size: 2.5rem;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -578,16 +619,21 @@ li {
     flex-direction: column;
   }
 
+
   h1 {
     font-size: 4.275rem;
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   h3 {
     font-size: 1.625rem;
+  }
+  .website-name {
+    font-size: 2.25rem;
+    text-align: center;
   }
 
   .logo {
@@ -599,23 +645,8 @@ li {
     min-height: 100vh;
   }
 
-  .hero-headline-wrapper {
-    padding: 4rem 8rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1rem;
-  }
-
   .about {
-    padding: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .global-footer {
-    padding: 4rem 4rem 0 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr .5fr 1fr;
   }
 
   /* Padding around work grid and project page */
@@ -646,22 +677,16 @@ li {
   .project-details {
     width: 65%;
   }
-
   .project-image {
     padding-bottom: 1rem;
   }
-
   .project-image-container {
     flex-direction: row;
   }
-
   .project-navigation {
     justify-content: flex-start;
   }
 
-  .arrow {
-    padding-right: 1rem;
-  }
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
@@ -674,10 +699,11 @@ li {
   .project-title{
     font-size: 4rem;
   }
-
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
+
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -687,6 +713,7 @@ li {
   .work-wrapper{
     flex-direction: row;
   }
+  
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
