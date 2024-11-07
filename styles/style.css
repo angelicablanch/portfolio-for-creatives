@@ -373,6 +373,10 @@ li {
   padding-left: 1rem;
 }
 
+.error-page-text{
+  text-align: center;
+}
+
 /* 
 
  █████  ██████   ██████  ██    ██ ████████ 
@@ -423,6 +427,19 @@ li {
   padding-right: 1rem;
 }
 
+.error-page-footer{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content:space-between;
+  background: var(--background-color-footer);
+  padding-top: 1rem;
+  padding-left:2rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  margin-top: auto;
+}
+
 
 
 /* Project Page 
@@ -462,13 +479,6 @@ li {
 
 .arrow {
   padding: 0;
-}
-
-.project-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
 }
 
 .project-image {
@@ -552,7 +562,6 @@ li {
     font-size: 2rem;
   }
 
-  .menu-text
   .footer-text{
     font-size: .85rem;
   }
@@ -569,8 +578,12 @@ li {
     padding-bottom: .5rem;
   }
   .project-title{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
+  .project-role{
+    font-size : 1.25rem;
+  }
+
   .about {
     display:flex;
     flex-flow: wrap;
@@ -600,11 +613,10 @@ li {
   .project-image {
     padding-bottom: 1rem;
   }
+
   .about {
     grid-template-columns: 1fr .5fr 1fr;
   }
-
-
   .about-name{
     font-size: 2.5rem;
   }
@@ -618,7 +630,6 @@ li {
   .work-wrapper{
     flex-direction: column;
   }
-
 
   h1 {
     font-size: 4.275rem;
@@ -652,7 +663,7 @@ li {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
@@ -660,7 +671,7 @@ li {
     flex-direction: row;
   }
   .project-title{
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   /* Sidebar on Large Devices */
@@ -671,6 +682,7 @@ li {
     position: sticky;
     top: 10.5rem;
     padding-right: 2rem;
+    padding-left: 1rem;
   }
 
   /* Main Project Image Area on Large Devices */
@@ -713,7 +725,6 @@ li {
   .work-wrapper{
     flex-direction: row;
   }
-  
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
