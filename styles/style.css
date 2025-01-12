@@ -301,13 +301,13 @@ li {
 .fa {
   padding: 1.5rem;
   font-size: 2rem;
-  color: e3461b;
+  color: #e3461b;
 }
 
 /* Add a hover effect if you want */
 .fa:hover {
   transition: 0.5s;
-  color: e3461b;
+  color: #e3461b;
 }
 
 
